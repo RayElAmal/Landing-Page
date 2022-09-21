@@ -1,0 +1,138 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    /*align-items: stretch;*/
+}
+
+h1,
+p,
+h3 {
+    margin: 0;
+}
+
+.hero-message-container,
+.information-container,
+.quote-container,
+.information-list-container,
+.footer,
+.information-box,
+.header > div,
+.call-container,
+.call-container > .call-to-action,
+.header {
+    display: flex;
+    /*justify-content: center;*/
+    border: 2px solid black;
+}
+
+.hero-message-container,
+.information-container,
+.quote-container,
+.call-container {
+    padding: 100px 50px; 
+}
+
+.header {
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.header > img {
+    width: 100px;
+}
+
+.header > div {
+    align-items: center;
+    gap: 30px;
+}
+
+.hero-message-container {
+    flex: 1;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+}
+
+.hero-message-container > div {
+    
+}
+
+.hero-message-container > div > h1 {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.hero-message-container > div > button {
+    padding: 8px 30px;
+}
+
+.hero-message-container > img {
+    width: 450px;
+    height: 250px;
+}
+
+.information-container {
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+}
+
+.information-container > .information-list-container {
+    gap: 10px;
+}
+
+.information-list-container > .information-box {
+    flex-direction: column;
+    align-items: center;
+}
+
+.information-box > .information-image {
+    width: 50%;
+}
+
+.quote-container {
+    flex: 1;
+    background-color: #E5E7EB;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-container {
+    justify-content: center;
+}
+
+.call-container > .call-to-action {
+    justify-content: space-around;
+    align-items: center;
+    height: 130px;
+    width: 1000px;
+    background-color: #3882F6;
+    border-radius: 4px;
+}
+
+.call-container > .call-to-action > button {
+    padding: 10px 40px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.call-to-action-text > h3 {
+    color: white;
+}
+
+.call-to-action-text > p {
+    color: white;
+}
+
+.footer {
+    padding: 30px 0px;
+    color: white;
+    background-color: #1F2937;
+    justify-content: center;
+}

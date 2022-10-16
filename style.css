@@ -9,7 +9,10 @@ body {
 
 h1,
 p,
+a,
 h3 {
+    font-family: "Roboto", sans-serif;
+    color: white;
     margin: 0;
 }
 
@@ -22,6 +25,7 @@ h3 {
 .header > div,
 .call-container,
 .call-container > .call-to-action,
+.hero-message-container > div,
 .header {
     display: flex;
     /*justify-content: center;*/
@@ -37,8 +41,10 @@ h3 {
 
 .header {
     justify-content: space-between;
+    background-color: #1F2937;
     padding-left: 100px;
     padding-right: 100px;
+    padding-top: 10px;
 }
 
 .header > img {
@@ -54,20 +60,37 @@ h3 {
     flex: 1;
     justify-content: center;
     align-items: stretch;
+    background-color: #1F2937;
     gap: 40px;
 }
 
 .hero-message-container > div {
-    
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 570px;
+    max-height: 250px;
 }
 
 .hero-message-container > div > h1 {
     font-weight: bold;
-    font-size: 50px;
+    font-size: 48px;
+}
+
+.hero-message-container > div > p {
+    font-size: 18px;
 }
 
 .hero-message-container > div > button {
+    border-radius: 10px;
+    border: none;
+    background-color: #3882F6;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
     padding: 8px 30px;
+    width: 130px;
+    height: 35px;
 }
 
 .hero-message-container > img {
@@ -78,27 +101,67 @@ h3 {
 .information-container {
     flex: 1;
     flex-direction: column;
+    padding-bottom: 100px;
+    gap: 20px;
     align-items: center;
 }
 
+.information-container > h1 {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
 .information-container > .information-list-container {
-    gap: 10px;
+    gap: 30px;
 }
 
 .information-list-container > .information-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 150px;
     flex-direction: column;
     align-items: center;
 }
 
 .information-box > .information-image {
-    width: 50%;
+    width: 100%;
+    height: auto;
+    border: 5px solid #3882F6;
+    border-radius: 8px;
+}
+
+.information-box > p {
+    text-align: center;
+    color: #1F2937;
 }
 
 .quote-container {
     flex: 1;
     background-color: #E5E7EB;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
+}
+
+.quote-container > h1 {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.quote-container > div {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.quote-container > div > p {
+    font-size: 26px;
+    font-weight: bold;
+    color: #1F2937;
 }
 
 .call-container {
